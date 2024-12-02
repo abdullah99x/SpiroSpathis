@@ -6,7 +6,12 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(230, 230, 230);
+    
+    
 }
+
+
+
 
 
 
@@ -24,7 +29,6 @@ body {
     color: rgb(71, 71, 71);
     text-decoration: none;
     font-weight: bold;
-    font-size: larger;
 }
 
 .menu {
@@ -38,7 +42,11 @@ body {
     text-decoration: none;
     color: rgb(71, 71, 71);
     font-weight: bold;
-    font-size: large;
+}
+
+.menu a:hover {
+    color: rgb(255, 196, 0);
+    transition: color 0.3s ease;
 }
 
 /* ------------------------------------------------ */
@@ -58,7 +66,7 @@ body {
 .home-title{
     /* font :var(--font-regular) var(--biggest-font-size) var(--second-font);
 */
-font-size: xxx-large;
+font-size: x-large;
 /* text-shadow: ; */
 }
 
@@ -74,20 +82,18 @@ font-size: xxx-large;
 
 }
 .button1 , .button1 a{
-    padding: 15px 45px;
-    border-radius: 30px;
+    padding: 15px 30px;
+    border-radius: 45px;
     background-color: rgb(255, 196, 0);
     color: rgb(36, 36, 36);
     text-decoration: none; 
-    font-size: larger;
 }
-.button2 {
-    padding: 15px 37px;
-    border-radius: 30px;
+.button2 , .button2 a {
+    padding: 15px 30px;
+    border-radius: 45px;
     border: 3px solid  rgb(0, 0, 0);;
     color: black;
     text-decoration: none; 
-    font-size: large;
 }
 
 .home-pic {
@@ -98,8 +104,8 @@ font-size: xxx-large;
 }
 
 .home-circle {
-    width: 320px;
-    height: 320px;
+    width: 250px;
+    height: 250px;
     background-color: rgb(170, 170, 170);
     border-radius: 50%;
     display: grid;
@@ -107,15 +113,16 @@ font-size: xxx-large;
 }
 
 .home-subcircle {
-    width: 250px;
-    height: 250px;background-color: rgb(255, 196, 0);
+    width: 190px;
+    height: 190px;
+    background-color: rgb(255, 196, 0);
     border-radius: 50%;
 
 
 }
 
 .home-image {
-    width: 400px;
+    width: 295px;
 
 rotate: 25deg;
     position: absolute;
@@ -159,7 +166,6 @@ color: rgb(97, 161, 0);
     display: flex;
     align-items: center;
     column-gap: 16px;
-    font-size: 20px;
     width: 100%;
 }
 .care-item i {
@@ -167,8 +173,8 @@ color: rgb(97, 161, 0);
 }
 
 .care-img {
-    width: 365px;
-    height: 365px;
+    width: 250px;
+
 
 
 }
@@ -182,18 +188,15 @@ color: rgb(97, 161, 0);
 
 .banner {
     padding-top: 0;
-}
-
-.banner-container {
     background-color: rgb(255, 196, 0);
     padding: 10px 20px;
 }
 
+
 .banner-list {
     display: flex;
     justify-content: center;
-    column-gap: 150px;
-    font-size: larger;
+    column-gap: 100px;
     font-style: bold;
     list-style: none;
 }
@@ -276,7 +279,6 @@ color: rgb(97, 161, 0);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
 }
 
 
@@ -287,6 +289,7 @@ color: rgb(97, 161, 0);
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
+    
 }
 .product-card:hover {
     transform: translateY(-20px);
@@ -294,12 +297,14 @@ color: rgb(97, 161, 0);
 
 
 .product-img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    max-width: 180px; /* حد أقصى */
+    height: auto;
     transition: transform 0.5s ease;
     cursor: pointer;
 
 }
+
 .product-img:hover {
     transform: translateY(-20px);
 }
