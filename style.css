@@ -1,34 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Titan+One&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body {
     background-color: rgb(255, 255, 255);
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(230, 230, 230);
-    
-    
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 0;
+    padding: 0;
 }
 
 
 
-
-
-
-
 .top-bar {
-    position: relative;
-
-    padding: 20px 100px 20px 100px ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%; 
+    padding: 30px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 
 }
 .logo a{
     color: rgb(71, 71, 71);
     text-decoration: none;
     font-weight: bold;
+    float: left;
 }
 
 .menu {
@@ -152,18 +164,22 @@ color: rgb(97, 161, 0);
 }
 
 .care-container {
-    margin-top: 67px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 0 ;
 
 }
 
 
 
+
 .care-item {
+
+    margin: 10px;
     list-style: none;
     display: flex;
+
     align-items: center;
     column-gap: 16px;
     width: 100%;
@@ -187,11 +203,13 @@ color: rgb(97, 161, 0);
 
 
 .banner {
-    padding-top: 0;
-    background-color: rgb(255, 196, 0);
-    padding: 10px 20px;
+margin: 0;
 }
 
+.banner-container {
+    background-color: rgb(255, 196, 0);
+    padding: 8px;
+}
 
 .banner-list {
     display: flex;
@@ -279,6 +297,7 @@ color: rgb(97, 161, 0);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 
@@ -298,7 +317,7 @@ color: rgb(97, 161, 0);
 
 .product-img {
     width: 100%;
-    max-width: 180px; /* حد أقصى */
+    max-width: 170px; 
     height: auto;
     transition: transform 0.5s ease;
     cursor: pointer;
