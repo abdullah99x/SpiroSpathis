@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Titan+One&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
+    
 }
 
 
 body {
     background-color: rgb(255, 255, 255);
-    margin: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(230, 230, 230);
     margin: 0;
@@ -19,6 +18,7 @@ body {
 ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 section {
@@ -45,7 +45,7 @@ section {
 
 .menu {
     display: flex;
-    list-style: none;
+
 }
 .menu li {
     margin-right: 25px;
@@ -168,7 +168,7 @@ color: rgb(97, 161, 0);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 0 ;
+
 
 }
 
@@ -176,9 +176,7 @@ color: rgb(97, 161, 0);
 
 
 .care-item {
-
     margin: 10px;
-    list-style: none;
     display: flex;
 
     align-items: center;
@@ -227,6 +225,7 @@ margin: 0;
 
 .product-section {
     margin-top: 50px;
+
 }
 
 .product-h {
@@ -270,8 +269,6 @@ margin: 0;
 .product-img:hover {
     transform: translateY(-20px);
 }
-
-
 
 
 
